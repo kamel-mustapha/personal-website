@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply bg-primary font-preahvihear text-gray-100;
+}
+
+.hero-avatar {
+  @apply relative bg-red-500 w-[400px] h-[500px]  rounded-full;
+  background: url("assets/gradient.svg");
+  background-repeat: no-repeat;
+}
+
+.hero-avatar img {
+  @apply absolute z-10  right-0 left-0 mx-auto mx-auto top-1/2 -translate-y-1/2;
+}
