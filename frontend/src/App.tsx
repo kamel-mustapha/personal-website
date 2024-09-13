@@ -1,6 +1,7 @@
 import { Hero } from "./components/Hero";
 import { Index } from "./components/Index";
 import { Navbar } from "./components/Navbar";
+import { Tools } from "./components/Tools";
 import { WorkExperience } from "./components/WorkExperience";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <div className="max-w-primary mx-auto px-4">
           <Index />
           <WorkExperience />
+          <Tools />
         </div>
       </div>
     </>
