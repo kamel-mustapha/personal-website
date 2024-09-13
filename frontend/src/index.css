@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 html {
-  @apply bg-primary font-preahvihear text-gray-100;
+  @apply text-[12px] lg:text-[14px] bg-primary font-preahvihear text-gray-100;
 }
 
 .hero-avatar {
@@ -16,4 +16,18 @@ html {
 
 .hero-avatar img {
   @apply absolute z-10  right-0 left-0 mx-auto mx-auto top-1/2 -translate-y-1/2;
+}
+
+.work-experience {
+  @apply relative;
+}
+
+.work-experience::before {
+  @apply absolute w-full h-full opacity-70;
+  content: "";
+  background: url("assets/gradient.svg") center no-repeat;
+}
+
+.work-experience-case {
+  @apply h-48 relative bg-third rounded-xl overflow-hidden bg-opacity-40 backdrop-blur-md before:content-[""] before:w-full before:h-1 before:absolute before:top-0 before:left-0 before:bg-text;
 }
