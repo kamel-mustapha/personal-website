@@ -1,6 +1,7 @@
 import { Hero } from "./components/Hero";
 import { Index } from "./components/Index";
 import { Navbar } from "./components/Navbar";
+import { Projects } from "./components/Projects";
 import { Tools } from "./components/Tools";
 import { WorkExperience } from "./components/WorkExperience";
 
@@ -14,6 +15,7 @@ function App() {
           <Index />
           <WorkExperience />
           <Tools />
+          <Projects />
         </div>
       </div>
     </>

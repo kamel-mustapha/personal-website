@@ -14,7 +14,7 @@ export default {
         preahvihear: ["Preahvihear", "sans"],
       },
       maxWidth: {
-        primary: "1200px",
+        primary: "1350px",
       },
     },
   },

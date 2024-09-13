@@ -36,3 +36,15 @@ html {
 .button-primary {
   @apply block w-fit text-sm bg-button hover:opacity-80 active:contrast-[1.05] duration-150 ease-in-out px-8 py-3 border border-gray-600 rounded-xl;
 }
+
+.project-case {
+  @apply relative flex flex-col gap-8 mt-48 py-12;
+}
+
+.project-case .image {
+  @apply w-full bg-[#2b0b3a] z-40 h-[400px] rounded-xl relative;
+}
+
+.project-case .gradient {
+  @apply absolute -top-16 lg:-top-72 w-[900px];
+}

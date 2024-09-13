@@ -3,7 +3,7 @@ import Arrow from "../assets/arrow.svg";
 
 export function Hero() {
   return (
-    <div className="max-w-[1200px] mx-auto flex gap-4 lg:mt-8">
+    <div className="max-w-[1300px] mx-auto flex gap-4 lg:mt-8">
       <div className="hidden lg:block hero-avatar">
         <img src={Avatar} alt="" />
       </div>

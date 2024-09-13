@@ -22,8 +22,8 @@ export function Navbar() {
           <img src={logo} alt="" />
         </a>
         <div className="flex gap-24 text-lg items-center text-gray-300">
-          {links.map((link) => (
-            <a href={link.link} className="hover:text-gray-50">
+          {links.map((link, index) => (
+            <a key={index} href={link.link} className="hover:text-gray-50">
               {link.name}
             </a>
           ))}
