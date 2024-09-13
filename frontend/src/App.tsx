@@ -1,12 +1,16 @@
 import { Hero } from "./components/Hero";
+import { Index } from "./components/Index";
 import { Navbar } from "./components/Navbar";
 
 function App() {
   return (
     <>
       <Navbar />
-      <div className="max-w-primary mx-auto pt-32">
+      <div className=" pt-32">
         <Hero />
+        <div className="max-w-primary mx-auto">
+          <Index />
+        </div>
       </div>
     </>
   );
