@@ -7,13 +7,14 @@ export default {
         primary: "#11071F",
         secondary: "#1A0B2E",
         third: "#130428",
+        button: "#2c1250",
         text: "#7127ba",
       },
       fontFamily: {
         preahvihear: ["Preahvihear", "sans"],
       },
       maxWidth: {
-        primary: "1000px",
+        primary: "1200px",
       },
     },
   },

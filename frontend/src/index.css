@@ -9,9 +9,10 @@ html {
 }
 
 .hero-avatar {
-  @apply relative bg-red-500 w-[400px] h-[500px]  rounded-full;
+  @apply relative bg-secondary bg-opacity-30 w-[400px] h-[500px]  rounded-full;
   background: url("assets/gradient.svg");
   background-repeat: no-repeat;
+  animation: pulse 2s infinite linear alternate;
 }
 
 .hero-avatar img {
@@ -29,5 +30,9 @@ html {
 }
 
 .work-experience-case {
-  @apply h-48 relative bg-third rounded-xl overflow-hidden bg-opacity-40 backdrop-blur-md before:content-[""] before:w-full before:h-1 before:absolute before:top-0 before:left-0 before:bg-text;
+  @apply flex items-center gap-8 px-12 h-56 relative bg-third rounded-2xl overflow-hidden bg-opacity-40 backdrop-blur-md before:content-[""] before:w-full before:h-1 before:absolute before:top-0 before:left-0 before:bg-text;
+}
+
+.button-primary {
+  @apply block w-fit text-sm bg-button hover:opacity-80 active:contrast-[1.05] duration-150 ease-in-out px-8 py-3 border border-gray-600 rounded-xl;
 }

@@ -21,12 +21,15 @@ export function Navbar() {
         <a href="/">
           <img src={logo} alt="" />
         </a>
-        <div className="flex gap-32 text-lg items-center text-gray-300">
+        <div className="flex gap-24 text-lg items-center text-gray-300">
           {links.map((link) => (
             <a href={link.link} className="hover:text-gray-50">
               {link.name}
             </a>
           ))}
+          <a href="" className="button-primary">
+            CONTACT
+          </a>
         </div>
       </div>
     </nav>
