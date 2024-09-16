@@ -8,19 +8,19 @@ export function WorkExperience() {
       link: "",
     },
     {
-      company: "Minelead",
+      company: "Cornerstone",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
       img: Minelead,
       link: "",
     },
     {
-      company: "Minelead",
+      company: "Ethisoft",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
       img: Minelead,
       link: "",
     },
     {
-      company: "Minelead",
+      company: "Easygestion",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
       img: Minelead,
       link: "",
