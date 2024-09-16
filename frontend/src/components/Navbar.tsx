@@ -16,7 +16,7 @@ export function Navbar() {
     },
   ];
   return (
-    <nav className="bg-secondary fixed w-full z-50 bg-opacity-60 backdrop-blur-md">
+    <nav className="bg-secondary fixed w-full z-[500] bg-opacity-60 backdrop-blur-md">
       <div className="max-w-primary mx-auto px-4 py-6 flex justify-between items-center">
         <a href="/">
           <img src={logo} alt="" />

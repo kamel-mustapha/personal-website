@@ -1,3 +1,4 @@
+import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { Index } from "./components/Index";
 import { Navbar } from "./components/Navbar";
@@ -17,6 +18,7 @@ function App() {
           <Tools />
           <Projects />
         </div>
+        <Footer />
       </div>
     </>
   );

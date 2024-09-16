@@ -9,7 +9,7 @@ export function Hero() {
       </div>
       <div className="pt-24 lg:pt-44 px-4 lg:px:0 lg:-translate-x-16 relative flex flex-col gap-8 lg:gap-4 max-w-[600px]">
         <p className="absolute top-10 left-4 lg:top-16 lg:-left-4">
-          <img src={Arrow} className="hidden lg:block absolute -left-28 -top-4" alt="" />
+          <img src={Arrow} className="hidden lg:block absolute -left-32 -top-7" alt="" />
           Hello! I am <span className="text-text">Kamel Dine</span>
         </p>
         <h1>A developer who:</h1>

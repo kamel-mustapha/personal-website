@@ -1,4 +1,4 @@
-import ToolsSvg from "../assets/tools.svg";
+import ToolsSvg from "../assets/tools.png";
 
 export function Tools() {
   return (
