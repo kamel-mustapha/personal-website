@@ -1,28 +1,39 @@
 import Minelead from "../assets/minelead.png";
+import Cornerstone from "../assets/cornerstone.png";
+import Boutique from "../assets/boutique.webp";
+import Ethisoft from "../assets/ethisoft.jpg";
+import Carto from "../assets/carto.svg";
+import Wissal from "../assets/wissal-academy.png";
+
 export function WorkExperience() {
   const portfolios = [
     {
       company: "Minelead",
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      description:
+        "Minelead provides real-time email finding and verification, with tools for bulk searches, browser extensions, and custom email lists to help you gather high-quality leads efficiently.",
       img: Minelead,
+      link: "",
+      class: "p-4 bg-white",
+    },
+    {
+      company: "Wissal Academy",
+      description: "Wissal Academy provides a range of affordable online and offline courses in web development, database management, AI, and DevOps, designed to build future-ready skills.",
+      img: Wissal,
+      class: "!rounded-xl object-cover",
       link: "",
     },
     {
-      company: "Cornerstone",
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-      img: Minelead,
+      company: "Carto",
+      description:
+        "Carto is a web application for designing web application architectures and managing open and closed flows. It simplifies the process of visualizing and documenting application structures.",
+      img: Carto,
       link: "",
     },
     {
       company: "Ethisoft",
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-      img: Minelead,
-      link: "",
-    },
-    {
-      company: "Easygestion",
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-      img: Minelead,
+      description: "Ethisoft is a web app for managing and declaring gifts and invitations received by employees, ensuring compliance with internal policies and ethics regulations.",
+      img: Ethisoft,
+      class: "p-2 bg-white !rounded-xl",
       link: "",
     },
   ];
@@ -33,7 +44,7 @@ export function WorkExperience() {
         <div className="mt-10 grid lg:grid-cols-2 gap-10">
           {portfolios.map((portfolio, index) => (
             <div key={index} className="work-experience-case">
-              <img src={portfolio.img} alt="" />
+              <img src={portfolio.img} alt="" className={`w-32 h-32 rounded-full ${portfolio.class ? portfolio.class : ""}`} />
               <div className="space-y-3">
                 <h3 className="text-2xl">{portfolio.company}</h3>
                 <p className="text-sm">{portfolio.description}</p>
@@ -46,8 +57,8 @@ export function WorkExperience() {
         </div>
       </div>
       <div className="flex justify-center mt-4 mb-8">
-        <a className="button-primary" href="/">
-          SEE MORE PROJECTS
+        <a className="button-primary z-[100]" href="/">
+          MORE PROJECTS
         </a>
       </div>
     </div>

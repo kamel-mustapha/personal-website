@@ -30,7 +30,7 @@ html {
 }
 
 .work-experience-case {
-  @apply flex items-center gap-8 px-12 h-56 relative bg-third rounded-2xl overflow-hidden bg-opacity-40 backdrop-blur-md before:content-[""] before:w-full before:h-1 before:absolute before:top-0 before:left-0 before:bg-text;
+  @apply flex items-center gap-8 px-12 h-64 relative bg-third rounded-2xl overflow-hidden bg-opacity-40 backdrop-blur-md before:content-[""] before:w-full before:h-1 before:absolute before:top-0 before:left-0 before:bg-text;
 }
 
 .button-primary {
