@@ -11,8 +11,8 @@ export function Navbar() {
       link: "/about",
     },
     {
-      name: "Lab",
-      link: "/lab",
+      name: "Portfolio",
+      link: "/portfolio",
     },
   ];
   return (
