@@ -1,6 +1,4 @@
 import Minelead from "../assets/minelead.png";
-import Cornerstone from "../assets/cornerstone.png";
-import Boutique from "../assets/boutique.webp";
 import Ethisoft from "../assets/ethisoft.jpg";
 import Carto from "../assets/carto.svg";
 import Wissal from "../assets/wissal-academy.png";
