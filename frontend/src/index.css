@@ -37,6 +37,10 @@ html {
   @apply block w-fit text-sm bg-button hover:opacity-80 active:contrast-[1.05] duration-150 ease-in-out px-8 py-3 border border-gray-600 rounded-xl;
 }
 
+.button-secondary {
+  @apply button-primary !bg-transparent;
+}
+
 .project-case {
   @apply relative flex flex-col gap-8 mt-48 py-12;
 }

@@ -1,23 +1,15 @@
 import { Footer } from "./components/Footer";
-import { Hero } from "./components/Hero";
-import { Index } from "./components/Index";
 import { Navbar } from "./components/Navbar";
-import { Tools } from "./components/Tools";
-import { WorkExperience } from "./components/WorkExperience";
+import { AppRoutes } from "./common/AppRoutes";
 
 function App() {
   return (
     <>
       <Navbar />
-      <div className=" pt-32">
-        <Hero />
-        <div className="max-w-primary mx-auto px-4">
-          <Index />
-          <WorkExperience />
-          <Tools />
-        </div>
-        <Footer />
+      <div className="max-w-primary mx-auto px-4 pt-32 min-h-screen">
+        <AppRoutes />
       </div>
+      <Footer />
     </>
   );
 }

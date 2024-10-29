@@ -1,7 +1,7 @@
-import Minelead from "../assets/minelead.png";
-import Ethisoft from "../assets/ethisoft.jpg";
-import Carto from "../assets/carto.svg";
-import Wissal from "../assets/wissal-academy.png";
+import Minelead from "../../assets/minelead.png";
+import Ethisoft from "../../assets/ethisoft.jpg";
+import Carto from "../../assets/carto.svg";
+import Wissal from "../../assets/wissal-academy.png";
 
 export function WorkExperience() {
   const portfolios = [
@@ -11,6 +11,7 @@ export function WorkExperience() {
         "Minelead provides real-time email finding and verification, with tools for bulk searches, browser extensions, and custom email lists to help you gather high-quality leads efficiently.",
       img: Minelead,
       link: "",
+      preview: "https://minelead.io",
       class: "p-4 bg-white",
     },
     {
@@ -18,6 +19,7 @@ export function WorkExperience() {
       description: "Wissal Academy provides a range of affordable online and offline courses in web development, database management, AI, and DevOps, designed to build future-ready skills.",
       img: Wissal,
       class: "!rounded-xl object-cover",
+      preview: "https://wissalacademy.com",
       link: "",
     },
     {
@@ -43,12 +45,19 @@ export function WorkExperience() {
           {portfolios.map((portfolio, index) => (
             <div key={index} className="work-experience-case">
               <img src={portfolio.img} alt="" className={`w-32 h-32 rounded-full ${portfolio.class ? portfolio.class : ""}`} />
-              <div className="space-y-3">
+              <div className="space-y-4">
                 <h3 className="text-2xl">{portfolio.company}</h3>
                 <p className="text-sm">{portfolio.description}</p>
-                <a className="button-primary" href={portfolio.link}>
-                  LEARN MORE
-                </a>
+                <div className="flex gap-4 !mt-6">
+                  <a className="button-primary" href={portfolio.link}>
+                    LEARN MORE
+                  </a>
+                  {portfolio.preview && (
+                    <a className="button-secondary" href={portfolio.preview} target="_blank">
+                      Preview
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}

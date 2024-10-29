@@ -1,5 +1,5 @@
-import Avatar from "../assets/avatar.svg";
-import Arrow from "../assets/arrow.svg";
+import Avatar from "../../assets/avatar.svg";
+import Arrow from "../../assets/arrow.svg";
 
 export function Hero() {
   return (

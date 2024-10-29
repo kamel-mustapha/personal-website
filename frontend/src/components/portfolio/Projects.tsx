@@ -1,4 +1,4 @@
-import Gradient from "../assets/gradient.svg";
+import Gradient from "../../assets/gradient.svg";
 
 export function Projects() {
   const projects = [
@@ -19,7 +19,7 @@ export function Projects() {
     <div className="pt-24 pb-72 overflow-hidden">
       {projects.map((project, index) => (
         <div key={index} className={`project-case ${index % 2 > 0 ? "lg:flex-row-reverse" : "lg:flex-row "}`}>
-          <div className="w-3/4 relative mt-20">
+          <div className="w-3/4 relative mt-20 z-[20000]">
             <h4 className={`text-text ${index % 2 > 0 ? "text-right" : ""}`}>Featured Project</h4>
             <h3 className={`text-3xl ${index % 2 > 0 ? "text-right" : ""}`}>{project.name}</h3>
             <p className={`absolute mt-12 bg-gray-800 bg-opacity-40 backdrop-blur-md rounded-xl p-8 w-[120%] z-50 ${index % 2 > 0 ? "-translate-x-32" : ""}`}>
@@ -39,7 +39,7 @@ export function Projects() {
               alt=""
             />
           </div>
-          <img className={`gradient ${index % 2 > 0 ? "-left-16" : "-right-16 "}`} src={Gradient} alt="" />
+          <img className={`gradient z-0 ${index % 2 > 0 ? "-left-16" : "-right-16 "}`} src={Gradient} alt="" />
         </div>
       ))}
     </div>
