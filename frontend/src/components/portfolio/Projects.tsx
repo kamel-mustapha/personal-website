@@ -4,9 +4,11 @@ export function Projects() {
   const projects = [
     {
       name: "Example Project",
+      preview: "https://minelead.io",
     },
     {
       name: "Example Project",
+      preview: "https://wissalacademy.com",
     },
     {
       name: "Example Project",
@@ -19,17 +21,22 @@ export function Projects() {
     <div className="pt-24 pb-72 overflow-hidden">
       {projects.map((project, index) => (
         <div key={index} className={`project-case ${index % 2 > 0 ? "lg:flex-row-reverse" : "lg:flex-row "}`}>
-          <div className="w-3/4 relative mt-20 z-[20000]">
+          <div className="w-3/4 relative mt-20 z-50">
             <h4 className={`text-text ${index % 2 > 0 ? "text-right" : ""}`}>Featured Project</h4>
             <h3 className={`text-3xl ${index % 2 > 0 ? "text-right" : ""}`}>{project.name}</h3>
             <p className={`absolute mt-12 bg-gray-800 bg-opacity-40 backdrop-blur-md rounded-xl p-8 w-[120%] z-50 ${index % 2 > 0 ? "-translate-x-32" : ""}`}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore harum maxime asperiores distinctio debitis incidunt ipsum eum provident error sapiente tempore, ea aspernatur. Magnam
               assumenda tenetur consectetur, nulla omnis laboriosam.
             </p>
-            <div className={`flex ${index % 2 > 0 ? "justify-end" : ""}`}>
-              <a href="" className="button-primary mt-64">
+            <div className={`flex mt-64 gap-2 ${index % 2 > 0 ? "justify-end" : ""}`}>
+              <a href="" className="button-primary ">
                 LEARN MORE
               </a>
+              {project.preview && (
+                <a className="button-secondary" href={project.preview} target="_blank">
+                  Preview
+                </a>
+              )}
             </div>
           </div>
           <div className="image">
