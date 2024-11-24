@@ -2,6 +2,7 @@ import Minelead from "../../assets/minelead.png";
 import Ethisoft from "../../assets/ethisoft.jpg";
 import Carto from "../../assets/carto.svg";
 import Wissal from "../../assets/wissal-academy.png";
+import { Link } from "react-router-dom";
 
 export function WorkExperience() {
   const portfolios = [
@@ -48,7 +49,7 @@ export function WorkExperience() {
               <div className="space-y-4">
                 <h3 className="text-2xl">{portfolio.company}</h3>
                 <p className="text-sm">{portfolio.description}</p>
-                <div className="flex gap-4 !mt-6">
+                <div className="flex flex-col lg:flex-row gap-4 !mt-6">
                   <a className="button-primary" href={portfolio.link}>
                     LEARN MORE
                   </a>
@@ -64,9 +65,9 @@ export function WorkExperience() {
         </div>
       </div>
       <div className="flex justify-center mt-4 mb-8">
-        <a className="button-primary z-[100]" href="/">
+        <Link className="button-primary z-[100]" to="/portfolio">
           MORE PROJECTS
-        </a>
+        </Link>
       </div>
     </div>
   );
