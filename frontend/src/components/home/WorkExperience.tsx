@@ -50,9 +50,9 @@ export function WorkExperience() {
                 <h3 className="text-2xl">{portfolio.company}</h3>
                 <p className="text-sm">{portfolio.description}</p>
                 <div className="flex flex-col lg:flex-row gap-4 !mt-6">
-                  <a className="button-primary" href={portfolio.link}>
+                  {/* <a className="button-primary" href={portfolio.link}>
                     LEARN MORE
-                  </a>
+                  </a> */}
                   {portfolio.preview && (
                     <a className="button-secondary" href={portfolio.preview} target="_blank">
                       Preview

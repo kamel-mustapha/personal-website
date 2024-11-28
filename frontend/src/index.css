@@ -42,11 +42,35 @@ html {
 }
 
 .project-case {
-  @apply relative flex flex-col gap-8 mt-48 py-12;
+  @apply relative flex flex-col gap-8 lg:py-32 border rounded-2xl mb-8 overflow-hidden border-button px-8 lg:px-16;
+}
+
+.project-case .description {
+  @apply w-3/4 relative mt-16 lg:mt-20 z-50;
+}
+
+.project-case .description h4 {
+  @apply text-text;
+}
+
+.project-case .description h3 {
+  @apply text-3xl;
+}
+
+.project-case .description p.text {
+  @apply absolute mt-12 bg-gray-800 bg-opacity-40 backdrop-blur-md rounded-xl p-8 w-[120%] z-50;
+}
+
+.project-case .description p.filler {
+  @apply my-8 p-8 opacity-0;
+}
+
+.project-case .description > div {
+  @apply flex gap-2;
 }
 
 .project-case .image {
-  @apply w-full bg-[#2b0b3a] z-40 h-[400px] rounded-xl relative;
+  @apply w-full bg-[#2b0b3a] z-40 h-[400px] rounded-xl relative cursor-pointer hover:opacity-80 transition duration-150 ease-in;
 }
 
 .project-case .gradient {

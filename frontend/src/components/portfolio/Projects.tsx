@@ -1,37 +1,69 @@
 import Gradient from "../../assets/gradient.svg";
+import Minelead from "../../assets/minelead-home.png";
+import Wissal from "../../assets/wissal-academy-home.png";
+import Carto from "../../assets/carto-home.png";
+import Statuschecks from "../../assets/statuschecks-home.png";
+import Easygestion from "../../assets/gestion-home.jpg";
+import Lamacta from "../../assets/lamacta-home.png";
 
 export function Projects() {
   const projects = [
     {
-      name: "Example Project",
+      name: "Minelead",
       preview: "https://minelead.io",
+      image: Minelead,
+      position: "Full Stack Developer",
+      description:
+        "Find Emails and Generate Leads. Cutting Edge Email Finder and Verifier, with Email scrapper for LinkedIn and more features for the best lead generation tool. find email for any company or website as you visit them.",
     },
     {
-      name: "Example Project",
+      name: "Wissal Academy",
       preview: "https://wissalacademy.com",
+      image: Wissal,
+      position: "Full Stack Developer / Frontend Tech Lead",
+      description:
+        "Wissal Academy is a web platform designed for managing training schools. It offers a showcase website along with a back-office system, enabling users to efficiently manage training programs, students, instructors, and certifications. The platform provides an integrated solution for streamlining operations and enhancing the visibility of educational institutions.",
     },
     {
-      name: "Example Project",
+      name: "Carto",
+      image: Carto,
+      position: "Tech Lead",
+      description:
+        "Carto is an innovative web application designed to simplify the design, visualization, and management of complex application architectures. Whether you’re organizing open or restricted data flows, Carto provides a powerful, intuitive interface that enhances clarity and productivity.",
     },
     {
-      name: "Example Project",
+      name: "Statuscheks",
+      image: Statuschecks,
+      position: "Founder / Full Stack Developer",
+      description:
+        "StatusChecks is your all-in-one solution for monitoring websites, servers, APIs, and databases. Designed to keep your services running smoothly, it offers real-time monitoring, instant alerts, and detailed reports, so you can address potential issues before they impact your business.",
+    },
+    {
+      name: "Easygestion",
+      image: Easygestion,
+      position: "Founder / Full Stack Developer",
+      description:
+        "EasyGestion is a desktop software tailored for merchants, including school cafeterias, to streamline their business operations. It offers essential tools for managing inventory, generating invoices and delivery notes, and handling sales, providing a simple and efficient solution for daily commerce management.",
+    },
+    {
+      name: "Lamacta",
+      image: Lamacta,
+      position: "Full Stack Developer",
+      description:
+        "Lamacta is your go-to platform for buying, selling, and renting real estate in Algeria. Whether you're searching for apartments, villas, or commercial properties, Lamacta simplifies the process with thousands of listings, a user-friendly interface, and a property price estimation tool to help you make informed decisions.",
     },
   ];
   return (
-    <div className="pt-24 pb-72 overflow-hidden">
+    <div className="mt-16">
       {projects.map((project, index) => (
         <div key={index} className={`project-case ${index % 2 > 0 ? "lg:flex-row-reverse" : "lg:flex-row "}`}>
-          <div className="w-3/4 relative mt-20 z-50">
-            <h4 className={`text-text ${index % 2 > 0 ? "text-right" : ""}`}>Featured Project</h4>
-            <h3 className={`text-3xl ${index % 2 > 0 ? "text-right" : ""}`}>{project.name}</h3>
-            <p className={`absolute mt-12 bg-gray-800 bg-opacity-40 backdrop-blur-md rounded-xl p-8 w-[120%] z-50 ${index % 2 > 0 ? "-translate-x-32" : ""}`}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore harum maxime asperiores distinctio debitis incidunt ipsum eum provident error sapiente tempore, ea aspernatur. Magnam
-              assumenda tenetur consectetur, nulla omnis laboriosam.
-            </p>
-            <div className={`flex mt-64 gap-2 ${index % 2 > 0 ? "justify-end" : ""}`}>
-              <a href="" className="button-primary ">
-                LEARN MORE
-              </a>
+          <div className="description">
+            <h4 className={`${index % 2 > 0 ? "lg:text-right" : ""}`}>{project.position}</h4>
+            <h3 className={`${index % 2 > 0 ? "lg:text-right" : ""}`}>{project.name}</h3>
+            <p className={`text ${index % 2 > 0 ? "lg:-translate-x-28" : ""}`}>{project.description}</p>
+            <p className={`filler ${index % 2 > 0 ? "lg:-translate-x-28" : ""}`}>{project.description}</p>
+            <div className={`${index % 2 > 0 ? "lg:justify-end" : ""}`}>
+              <button className="button-primary ">LEARN MORE</button>
               {project.preview && (
                 <a className="button-secondary" href={project.preview} target="_blank">
                   Preview
@@ -40,15 +72,17 @@ export function Projects() {
             </div>
           </div>
           <div className="image">
-            <img
-              src="https://gogstbill.com/wp-content/uploads/2017/12/17-442x420.jpg"
-              className={`w-full h-full absolute top-8 object-cover rounded-xl ${index % 2 > 0 ? "-left-8" : "-right-8 "}`}
-              alt=""
-            />
+            <img src={project.image} className={`w-full h-full absolute top-8 object-cover rounded-xl ${index % 2 > 0 ? "lg:-left-8" : "lg:-right-8 "}`} alt="" />
           </div>
           <img className={`gradient z-0 ${index % 2 > 0 ? "-left-16" : "-right-16 "}`} src={Gradient} alt="" />
         </div>
       ))}
+      <p className="text-center mt-40">
+        <div>In addition to these projects, I have also contributed as a consultant on several short-term assignments, providing tailored solutions and delivering immediate impact.</div>
+        <a className="!inline-block mt-8 button-primary" href="mailto:kamel.dine@hotmail.com">
+          CONTACT ME
+        </a>
+      </p>
     </div>
   );
 }
