@@ -12,11 +12,11 @@ html {
   @apply relative bg-secondary bg-opacity-30 w-[400px] h-[500px]  rounded-full;
   background: url("assets/gradient.svg");
   background-repeat: no-repeat;
-  animation: pulse 2s infinite linear alternate;
+  animation: pulse 2s infinite;
 }
 
 .hero-avatar img {
-  @apply absolute z-10  right-0 left-0 mx-auto mx-auto top-1/2 -translate-y-1/2;
+  @apply absolute z-10  right-0 left-0 mx-auto top-1/2 -translate-y-1/2;
 }
 
 .work-experience {
@@ -79,5 +79,5 @@ html {
 
 .project-case .gradient {
   @apply absolute -top-16 lg:-top-72 w-[900px];
-  animation: animate__fadeIn 5s linear;
+  animation: flash 8s infinite linear;
 }
