@@ -42,7 +42,7 @@ html {
 }
 
 .project-case {
-  @apply relative flex flex-col-reverse gap-8 lg:py-32  rounded-2xl  border-button px-2 mb-16 lg:mb-0 lg:px-0;
+  @apply border-b pb-16 lg:border-none lg:pb-0 border-gray-700 relative flex flex-col-reverse gap-8 lg:py-32 px-2 mb-16 lg:mb-0 lg:px-0;
 }
 
 .project-case .description {
@@ -75,4 +75,5 @@ html {
 
 .project-case .gradient {
   @apply absolute -top-16 lg:-top-72 w-[900px];
+  animation: animate__fadeIn 5s linear;
 }

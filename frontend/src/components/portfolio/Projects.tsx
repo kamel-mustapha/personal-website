@@ -56,7 +56,7 @@ export function Projects() {
   return (
     <div className="mt-16">
       {projects.map((project, index) => (
-        <div key={index} className={`project-case ${index % 2 > 0 ? "lg:flex-row-reverse" : "lg:flex-row "}`}>
+        <div key={index} className={`project-case animate__animated animate__fadeIn ${index % 2 > 0 ? "lg:flex-row-reverse" : "lg:flex-row "}`}>
           <div className="description">
             <h4 className={`${index % 2 > 0 ? "lg:text-right" : ""}`}>{project.position}</h4>
             <h3 className={`${index % 2 > 0 ? "lg:text-right" : ""}`}>{project.name}</h3>
