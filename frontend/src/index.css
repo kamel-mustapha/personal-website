@@ -42,11 +42,11 @@ html {
 }
 
 .project-case {
-  @apply relative flex flex-col gap-8 lg:py-32  rounded-2xl  border-button px-8 lg:px-0;
+  @apply relative flex flex-col-reverse gap-8 lg:py-32  rounded-2xl  border-button px-2 mb-16 lg:mb-0 lg:px-0;
 }
 
 .project-case .description {
-  @apply w-3/4 relative mt-16 lg:mt-20 z-50;
+  @apply lg:w-3/4 relative mt-16 lg:mt-20 z-50;
 }
 
 .project-case .description h4 {
@@ -58,11 +58,11 @@ html {
 }
 
 .project-case .description p.text {
-  @apply absolute mt-12 bg-gray-800 bg-opacity-40 backdrop-blur-md rounded-xl p-8 w-[120%] z-50;
+  @apply absolute mt-12 bg-gray-800 bg-opacity-40 backdrop-blur-md rounded-xl p-8 w-full lg:w-[120%] z-50;
 }
 
 .project-case .description p.filler {
-  @apply my-8 p-8 opacity-0;
+  @apply my-12 p-8 opacity-0;
 }
 
 .project-case .description > div {

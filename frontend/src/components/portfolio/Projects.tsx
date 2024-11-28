@@ -72,7 +72,7 @@ export function Projects() {
             </div>
           </div>
           <div className="image">
-            <img src={project.image} className={`w-full h-full absolute top-8 object-cover rounded-xl ${index % 2 > 0 ? "lg:-left-8" : "lg:-right-8 "}`} alt="" />
+            <img src={project.image} className={`w-full h-full absolute top-8 object-fit lg:object-cover rounded-xl ${index % 2 > 0 ? "lg:-left-8" : "lg:-right-8 "}`} alt="" />
           </div>
           <img className={`gradient z-0 ${index % 2 > 0 ? "-left-16" : "-right-16 "}`} src={Gradient} alt="" />
         </div>
