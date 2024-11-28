@@ -45,6 +45,10 @@ html {
   @apply border-b pb-16 lg:border-none lg:pb-0 overflow-hidden lg:overflow-visible border-gray-700 relative flex flex-col-reverse gap-8 lg:py-32 px-2 mb-16 lg:mb-0 lg:px-0;
 }
 
+.project-case:not(:first-child) {
+  @apply mt-72;
+}
+
 .project-case .description {
   @apply lg:w-3/4 relative mt-16 lg:mt-20 z-50;
 }
