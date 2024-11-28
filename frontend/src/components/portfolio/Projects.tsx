@@ -77,12 +77,6 @@ export function Projects() {
           <img className={`gradient z-0 ${index % 2 > 0 ? "-left-16" : "-right-16 "}`} src={Gradient} alt="" />
         </div>
       ))}
-      <p className="text-center mt-40">
-        <div>In addition to these projects, I have also contributed as a consultant on several short-term assignments, providing tailored solutions and delivering immediate impact.</div>
-        <a className="!inline-block mt-8 button-primary" href="mailto:kamel.dine@hotmail.com">
-          CONTACT ME
-        </a>
-      </p>
     </div>
   );
 }

@@ -42,7 +42,7 @@ html {
 }
 
 .project-case {
-  @apply relative flex flex-col gap-8 lg:py-32 border rounded-2xl mb-8 overflow-hidden border-button px-8 lg:px-16;
+  @apply relative flex flex-col gap-8 lg:py-32  rounded-2xl  border-button px-8 lg:px-0;
 }
 
 .project-case .description {
