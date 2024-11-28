@@ -16,7 +16,25 @@ html {
 }
 
 .hero-avatar img {
-  @apply absolute z-10  right-0 left-0 mx-auto top-1/2 -translate-y-1/2;
+  @apply absolute z-10 right-0 left-0 mx-auto top-1/2 -translate-y-1/2;
+}
+
+.navbar-link {
+  @apply duration-200 opacity-70 hover:opacity-100;
+}
+
+.link-active {
+  @apply opacity-100;
+}
+
+.link-active div {
+  @apply block bg-purple-700;
+  animation: slideInUp 200ms;
+}
+
+.mobile-links {
+  @apply grid gap-10 py-6 px-4;
+  animation: fadeInDown 100ms ease-in;
 }
 
 .work-experience {
@@ -80,4 +98,10 @@ html {
 .project-case .gradient {
   @apply absolute -top-16 lg:-top-72 w-[900px];
   animation: flash 8s infinite linear;
+}
+
+@media screen and (max-width: 1200px) {
+  * {
+    @apply !cursor-default;
+  }
 }

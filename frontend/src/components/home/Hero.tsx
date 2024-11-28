@@ -7,16 +7,16 @@ export function Hero() {
       <div className="hero-avatar">
         <img src={Avatar} alt="" />
       </div>
-      <div className="pt-24 lg:pt-44 lg:px-4 lg:px:0 lg:-translate-x-16 relative flex flex-col gap-8 lg:gap-4 max-w-[600px]">
+      <div className="pt-24 lg:pt-44 lg:px-4 lg:px:0 lg:-translate-x-16 relative flex flex-col gap-8 lg:gap-4 max-w-[900px]">
         <p className="absolute top-10 lg:top-16 lg:-left-4">
           <img src={Arrow} className="hidden lg:block absolute -left-32 -top-7" alt="" />
-          Hello! I am <span className="text-text">Kamel Dine</span>
+          Hello! I am <span className="text-text">Kamel</span>
         </p>
         <h1>A developer who:</h1>
         <h2 className="text-4xl">
-          Judges an application by its <span className="text-text">user interface</span>...
+          Builds experiences that <span className="text-text">connect, inspire, and empower</span>...
         </h2>
-        <h3 className="sm">Because if the interface doesn’t impress you, how can the underlying code or functionality?</h3>
+        <h3 className="sm">"Because it’s not just about writing code, it’s about creating something that truly resonates with users."</h3>
       </div>
     </div>
   );

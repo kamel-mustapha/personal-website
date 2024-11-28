@@ -63,7 +63,7 @@ export function Projects() {
             <p className={`text ${index % 2 > 0 ? "lg:-translate-x-28" : ""}`}>{project.description}</p>
             <p className={`filler ${index % 2 > 0 ? "lg:-translate-x-28" : ""}`}>{project.description}</p>
             <div className={`${index % 2 > 0 ? "lg:justify-end" : ""}`}>
-              <button className="button-primary ">LEARN MORE</button>
+              {/* <button className="button-primary ">LEARN MORE</button> */}
               {project.preview && (
                 <a className="button-secondary" href={project.preview} target="_blank">
                   Preview

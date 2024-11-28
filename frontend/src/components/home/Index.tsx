@@ -1,10 +1,10 @@
 export function Index() {
   return (
     <>
-      <h3 className="mt-14 lg:mt-0 text-4xl">I'm a Developer.</h3>
-      {/* <h4 className="mt-4 lg:mt-0">Currently, working at *****</h4> */}
-      <p className="mt-12 max-w-[750px]">
-        A self-taught web developer, working in the industry for 6+ years. I build efficient and scalable digital solutions that balance user requirements with business objectives.
+      <h3 className="mt-14 lg:mt-0 text-4xl font-semibold">I'm a Developer.</h3>
+      <p className="mt-12 max-w-[950px] text-lg">
+        With over 6 years of hands-on experience as a self-taught web developer, I craft efficient, scalable, and innovative digital solutions. My approach focuses on seamlessly aligning user needs
+        with business goals, ensuring that every project is both functional and impactful.
       </p>
     </>
   );
