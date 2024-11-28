@@ -46,7 +46,7 @@ html {
 }
 
 .project-case:not(:first-child) {
-  @apply mt-72;
+  @apply lg:mt-72;
 }
 
 .project-case .description {
