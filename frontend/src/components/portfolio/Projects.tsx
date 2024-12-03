@@ -57,9 +57,9 @@ export function Projects() {
     },
   ];
 
-  const showDialog = () => {
-    setDialog(true);
-  };
+  // const showDialog = () => {
+  //   setDialog(true);
+  // };
 
   const hideDialog = () => {
     setDialog(false);
