@@ -5,8 +5,11 @@ import Carto from "../../assets/carto-home.png";
 import Statuschecks from "../../assets/statuschecks-home.png";
 import Easygestion from "../../assets/gestion-home.jpg";
 import Lamacta from "../../assets/lamacta-home.png";
+import { Presentation } from "./Presentation";
+import { useState } from "react";
 
 export function Projects() {
+  const [dialog, setDialog] = useState(false);
   const projects = [
     {
       name: "Minelead",
@@ -53,30 +56,44 @@ export function Projects() {
         "Lamacta is your go-to platform for buying, selling, and renting real estate in Algeria. Whether you're searching for apartments, villas, or commercial properties, Lamacta simplifies the process with thousands of listings, a user-friendly interface, and a property price estimation tool to help you make informed decisions.",
     },
   ];
+
+  const showDialog = () => {
+    setDialog(true);
+  };
+
+  const hideDialog = () => {
+    setDialog(false);
+  };
+
   return (
-    <div className="mt-16">
-      {projects.map((project, index) => (
-        <div key={index} className={`project-case animate__animated animate__fadeIn ${index % 2 > 0 ? "lg:flex-row-reverse" : "lg:flex-row "}`}>
-          <div className="description">
-            <h4 className={`${index % 2 > 0 ? "lg:text-right" : ""}`}>{project.position}</h4>
-            <h3 className={`${index % 2 > 0 ? "lg:text-right" : ""}`}>{project.name}</h3>
-            <p className={`text ${index % 2 > 0 ? "lg:-translate-x-28" : ""}`}>{project.description}</p>
-            <p className={`filler ${index % 2 > 0 ? "lg:-translate-x-28" : ""}`}>{project.description}</p>
-            <div className={`${index % 2 > 0 ? "lg:justify-end" : ""}`}>
-              {/* <button className="button-primary ">LEARN MORE</button> */}
-              {project.preview && (
-                <a className="button-secondary" href={project.preview} target="_blank">
-                  Preview
-                </a>
-              )}
+    <>
+      <div className="mt-16">
+        {projects.map((project, index) => (
+          <div key={index} className={`project-case animate__animated animate__fadeIn ${index % 2 > 0 ? "lg:flex-row-reverse" : "lg:flex-row "}`}>
+            <div className="description">
+              <h4 className={`${index % 2 > 0 ? "lg:text-right" : ""}`}>{project.position}</h4>
+              <h3 className={`${index % 2 > 0 ? "lg:text-right" : ""}`}>{project.name}</h3>
+              <p className={`text ${index % 2 > 0 ? "lg:-translate-x-28" : ""}`}>{project.description}</p>
+              <p className={`filler ${index % 2 > 0 ? "lg:-translate-x-28" : ""}`}>{project.description}</p>
+              <div className={`${index % 2 > 0 ? "lg:justify-end" : ""}`}>
+                {/* <button className="button-primary" onClick={showDialog}>
+                  LEARN MORE
+                </button> */}
+                {project.preview && (
+                  <a className="button-secondary" href={project.preview} target="_blank">
+                    Preview
+                  </a>
+                )}
+              </div>
             </div>
+            <div className="image">
+              <img src={project.image} className={`w-full h-full absolute top-8 object-cover lg:object-fit lg:object-cover rounded-xl ${index % 2 > 0 ? "lg:-left-8" : "lg:-right-8 "}`} alt="" />
+            </div>
+            <img className={`gradient z-0 ${index % 2 > 0 ? "-left-16" : "-right-16 "}`} src={Gradient} alt="" />
           </div>
-          <div className="image">
-            <img src={project.image} className={`w-full h-full absolute top-8 object-fit lg:object-cover rounded-xl ${index % 2 > 0 ? "lg:-left-8" : "lg:-right-8 "}`} alt="" />
-          </div>
-          <img className={`gradient z-0 ${index % 2 > 0 ? "-left-16" : "-right-16 "}`} src={Gradient} alt="" />
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+      {dialog && <Presentation onClose={hideDialog} />}
+    </>
   );
 }

@@ -33,7 +33,7 @@ html {
 }
 
 .mobile-links {
-  @apply grid gap-10 py-6 px-4;
+  @apply flex flex-col items-center gap-10 py-6 px-4;
   animation: fadeInDown 100ms ease-in;
 }
 
@@ -98,6 +98,10 @@ html {
 .project-case .gradient {
   @apply absolute -top-16 lg:-top-72 w-[900px];
   animation: flash 8s infinite linear;
+}
+
+.project-dialog {
+  animation: fadeInUpBig 300ms;
 }
 
 @media screen and (max-width: 1200px) {

@@ -1,9 +1,24 @@
+import { useContext } from "react";
+import { LangContext } from "../contexts/LangContext";
+
 export function Footer() {
+  const language = useContext(LangContext);
+
+  const TRANSLATIONS = {
+    DEDICATED: {
+      en: "A dedicated developer ready to take on any challenge.",
+      fr: "Un développeur dévoué prêt à relever tous les défis.",
+    },
+    COPYRIGHT: {
+      en: "Copyright",
+      fr: "Tous droits réservés",
+    },
+  };
   return (
     <>
       <div className="border-t border-gray-800 mt-32 text-center py-8 flex flex-col justify-center items-center gap-6">
         <h3 className="text-2xl">Kamel Dine</h3>
-        <p className="max-w-[500px] text-gray-400">A dedicated developer ready to take on any challenge.</p>
+        <p className="max-w-[500px] text-gray-400">{TRANSLATIONS.DEDICATED[language!.state]}</p>
         <div className="flex gap-6 my-4">
           <a href="https://www.linkedin.com/in/mustapha-kamel-dine/" target="_blank">
             <i className="fa-brands fa-linkedin-in fa-lg"></i>
@@ -13,7 +28,7 @@ export function Footer() {
           </a>
         </div>
       </div>
-      <div className="bg-secondary text-text opacity-90 text-center py-4">Copyright ©2024 Kamel Dine.</div>
+      <div className="bg-secondary text-text opacity-90 text-center py-4">{TRANSLATIONS.COPYRIGHT[language!.state]} ©2024 Kamel Dine.</div>
     </>
   );
 }
