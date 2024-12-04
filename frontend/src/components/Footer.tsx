@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { LangContext } from "../contexts/LangContext";
+import Logo from "../assets/logo.svg";
 
 export function Footer() {
   const language = useContext(LangContext);
@@ -16,8 +17,11 @@ export function Footer() {
   };
   return (
     <>
-      <div className="border-t border-gray-800 mt-32 text-center py-8 flex flex-col justify-center items-center gap-6">
-        <h3 className="text-2xl">Kamel Dine</h3>
+      <div className="border-t border-button mt-32 text-center py-8 flex flex-col justify-center items-center gap-6">
+        <h3 className="text-2xl flex  items-center">
+          <img src={Logo} width={80} alt="" />
+          Kamel Dine
+        </h3>
         <p className="max-w-[500px] text-gray-400">{TRANSLATIONS.DEDICATED[language!.state]}</p>
         <div className="flex gap-6 my-4">
           <a href="https://www.linkedin.com/in/mustapha-kamel-dine/" target="_blank">

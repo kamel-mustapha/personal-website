@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.svg";
 import { useContext, useEffect, useState } from "react";
 import Fr from "../assets/fr.svg";
 import En from "../assets/en.svg";
@@ -97,9 +97,9 @@ export function Navbar() {
 
   return (
     <nav className="bg-secondary fixed w-full z-[500] bg-opacity-60 backdrop-blur-md">
-      <div className="max-w-primary mx-auto px-4 py-6 flex justify-between items-center">
+      <div className="max-w-primary mx-auto px-4 py-4 flex justify-between items-center">
         <Link onClick={linkClick} to="/">
-          <img src={logo} alt="" />
+          <img width={60} src={logo} alt="" />
         </Link>
         <div className="hidden lg:flex gap-16 text-lg items-center text-gray-300">
           <a href="mailto:kamel.dine@hotmail.om" className="button-primary ">
