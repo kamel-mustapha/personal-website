@@ -21,7 +21,7 @@ export function Tools() {
   };
   return (
     <div className="mt-16">
-      <h2 className="text-4xl text-center max-w-[1000px] mx-auto leading-relaxed">
+      <h2 className="text-2xl lg:text-4xl mb-12 lg:mb-8 text-center max-w-[1000px] mx-auto leading-relaxed">
         {TRANSLATIONS.DESCRIPTION_1[language!.state]} <span className="text-text">{TRANSLATIONS.DESCRIPTION_2[language!.state]}</span> {TRANSLATIONS.DESCRIPTION_3[language!.state]}
       </h2>
       <img src={ToolsSvg} alt="" className="mx-auto" />

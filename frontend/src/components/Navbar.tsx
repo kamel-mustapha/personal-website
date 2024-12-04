@@ -96,7 +96,7 @@ export function Navbar() {
   };
 
   return (
-    <nav className="bg-secondary fixed w-full z-[500] bg-opacity-60 backdrop-blur-md">
+    <nav className="bg-secondary fixed w-full z-[500] bg-opacity-60 backdrop-blur-md border-b border-button border-x-2 border-x-text left-0 right-0 mx-auto ">
       <div className="max-w-primary mx-auto px-4 py-4 flex justify-between items-center">
         <Link onClick={linkClick} to="/">
           <img width={60} src={logo} alt="" />

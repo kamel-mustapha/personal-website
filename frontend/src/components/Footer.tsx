@@ -17,7 +17,7 @@ export function Footer() {
   };
   return (
     <>
-      <div className="border-t border-button mt-32 text-center py-8 flex flex-col justify-center items-center gap-6">
+      <div className="border-t  border-button border-x-2 border-x-text mt-32 text-center py-8 flex flex-col justify-center items-center gap-6">
         <h3 className="text-2xl flex  items-center">
           <img src={Logo} width={80} alt="" />
           Kamel Dine
@@ -32,7 +32,7 @@ export function Footer() {
           </a>
         </div>
       </div>
-      <div className="bg-secondary text-text opacity-90 text-center py-4">{TRANSLATIONS.COPYRIGHT[language!.state]} ©2024 Kamel Dine.</div>
+      <div className="bg-secondary text-text opacity-90 text-center py-4 border-x-2 border-x-text">{TRANSLATIONS.COPYRIGHT[language!.state]} ©2024 Kamel Dine.</div>
     </>
   );
 }

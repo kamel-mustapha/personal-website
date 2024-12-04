@@ -105,6 +105,9 @@ html {
 }
 
 @media screen and (max-width: 1200px) {
+  html {
+    font-size: 13.5px;
+  }
   * {
     @apply !cursor-default;
   }

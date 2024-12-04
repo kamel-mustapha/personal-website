@@ -30,7 +30,7 @@ export function Hero() {
   };
 
   return (
-    <div className="overflow-hidden max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-4 lg:mt-8">
+    <div className="overflow-hidden max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-4 lg:mt-8 pt-8 lg:pt-0">
       <div className="hero-avatar">
         <img src={Avatar} alt="" />
       </div>
@@ -40,7 +40,7 @@ export function Hero() {
           {TRANSLATIONS.HELLO[language!.state]} <span className="text-text">Kamel</span>
         </p>
         <h1>{TRANSLATIONS.DEVELOPER[language!.state]}</h1>
-        <h2 className="text-4xl">
+        <h2 className="text-2xl lg:text-4xl">
           {TRANSLATIONS.EXPERIENCES[language!.state]} <span className="text-text animate__animated animate__fadeIn">{TRANSLATIONS.CONNECT[language!.state]}</span>...
         </h2>
         <h3 className="sm">"{TRANSLATIONS.QUOTE[language!.state]}"</h3>
