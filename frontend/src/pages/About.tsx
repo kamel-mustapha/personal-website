@@ -8,7 +8,7 @@ export function About() {
   const TRANSLATIONS = {
     ABOUT: {
       en: "About",
-      fr: "À propos",
+      fr: "A propos",
     },
     DESCRIPTION_1: {
       en: "Hi, I'm Kamel Dine! I'm a Full Stack Developer with a couple of years of experience delivering innovative, high-quality solutions on international projects.",
@@ -17,12 +17,12 @@ export function About() {
     DESCRIPTION_2: {
       en: `My focus is on creating seamless user experiences and efficient processes, working across both frontend and backend. I love collaborating within dynamic teams, mentoring others, and
           continuously learning new approaches to solve complex problems.`,
-      fr: `Mon objectif est de créer des expériences utilisateur fluides et des processus efficaces, en travaillant à la fois sur le frontend et le backend. J'adore collaborer au sein d'équipes dynamiques, 
+      fr: `Mon objectif est de créer des expériences utilisateur fluides et des processus efficaces, en travaillant a la fois sur le frontend et le backend. J'adore collaborer au sein d'équipes dynamiques, 
           encadrer les autres et apprendre continuellement de nouvelles approches pour résoudre des problèmes complexes.`,
     },
     DESCRIPTION_3: {
       en: "Outside of tech, I enjoy exploring new ideas and the beautiful landscapes of France. Let’s connect and bring fresh ideas to life together!",
-      fr: "En dehors de la tech, j'aime explorer de nouvelles idées et admirer les magnifiques paysages de la France. Connectons-nous et donnons vie à des idées novatrices ensemble !",
+      fr: "En dehors de la tech, j'aime explorer de nouvelles idées et admirer les magnifiques paysages de la France. Connectons-nous et donnons vie a des idées novatrices ensemble !",
     },
     TOUCH: {
       en: "Get in touch",

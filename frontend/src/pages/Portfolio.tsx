@@ -10,7 +10,7 @@ export function Portfolio() {
         multiple hats, such as backend and frontend developer, and have also served as a tech lead on several occasions, where I led teams of developers.`,
       fr: `Au cours de ma carrière, j'ai eu l'opportunité de travailler sur une grande variété de projets dans différents domaines, notamment le e-commerce, l'e-learning, 
       le marketing et les logiciels de bureau. J'ai occupé plusieurs rôles, tels que développeur backend et frontend, et j'ai également exercé en tant que leader technique 
-      à plusieurs reprises, où j'ai dirigé des équipes de développeurs.`,
+      a plusieurs reprises, où j'ai dirigé des équipes de développeurs.`,
     },
     ADDITION: {
       en: `In addition to these projects, I have also contributed as a consultant on several short-term assignments, providing tailored solutions and delivering immediate impact.`,

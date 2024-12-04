@@ -37,7 +37,7 @@ export function Projects() {
       },
       description: {
         en: "Find Emails and Generate Leads. Cutting Edge Email Finder and Verifier, with Email scrapper for LinkedIn and more features for the best lead generation tool. find email for any company or website as you visit them.",
-        fr: `Trouvez des e-mails et générez des leads. Un outil de pointe pour trouver et vérifier des e-mails, avec un extracteur d'e-mails pour LinkedIn et bien plus de fonctionnalités pour le meilleur outil de génération de leads. Trouvez des adresses e-mail pour toute entreprise ou site web au fur et à mesure que vous les visitez.`,
+        fr: `Trouvez des e-mails et générez des leads. Un outil de pointe pour trouver et vérifier des e-mails, avec un extracteur d'e-mails pour LinkedIn et bien plus de fonctionnalités pour le meilleur outil de génération de leads. Trouvez des adresses e-mail pour toute entreprise ou site web au fur et a mesure que vous les visitez.`,
       },
     },
     {
@@ -98,7 +98,7 @@ export function Projects() {
       },
       description: {
         en: "Lamacta is your go-to platform for buying, selling, and renting real estate in Algeria. Whether you're searching for apartments, villas, or commercial properties, Lamacta simplifies the process with thousands of listings, a user-friendly interface, and a property price estimation tool to help you make informed decisions.",
-        fr: `Lamacta est votre plateforme de référence pour l'achat, la vente et la location de biens immobiliers en Algérie. Que vous recherchiez des appartements, des villas ou des propriétés commerciales, Lamacta simplifie le processus avec des milliers d'annonces, une interface conviviale et un outil d'estimation des prix des biens immobiliers pour vous aider à prendre des décisions éclairées.`,
+        fr: `Lamacta est votre plateforme de référence pour l'achat, la vente et la location de biens immobiliers en Algérie. Que vous recherchiez des appartements, des villas ou des propriétés commerciales, Lamacta simplifie le processus avec des milliers d'annonces, une interface conviviale et un outil d'estimation des prix des biens immobiliers pour vous aider a prendre des décisions éclairées.`,
       },
     },
   ];

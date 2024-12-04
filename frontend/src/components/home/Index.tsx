@@ -18,7 +18,7 @@ export function Index() {
       I craft efficient, scalable, and innovative digital solutions. My approach focuses on seamlessly aligning user needs
         with business goals, ensuring that every project is both functional and impactful.`,
       fr: `Fort de plus de 6 ans d'expérience pratique en tant que développeur web autodidacte, 
-      je crée des solutions numériques efficaces, évolutives et innovantes. Mon approche consiste à aligner de manière fluide les besoins des utilisateurs avec les objectifs commerciaux, en veillant à ce que chaque projet soit à la fois fonctionnel et impactant.
+      je crée des solutions numériques efficaces, évolutives et innovantes. Mon approche consiste a aligner de manière fluide les besoins des utilisateurs avec les objectifs commerciaux, en veillant a ce que chaque projet soit a la fois fonctionnel et impactant.
       `,
     },
   };

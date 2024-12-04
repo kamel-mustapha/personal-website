@@ -8,7 +8,7 @@ export function Tools() {
   const TRANSLATIONS = {
     DESCRIPTION_1: {
       en: "I'm currently looking to join a",
-      fr: "Je cherche actuellement à rejoindre une équipe",
+      fr: "Je cherche actuellement a rejoindre une équipe",
     },
     DESCRIPTION_2: {
       en: "cross-functional",
@@ -16,7 +16,7 @@ export function Tools() {
     },
     DESCRIPTION_3: {
       en: "team that values improving people's lives through accessible design",
-      fr: "qui valorise l'amélioration de la vie des gens grâce à un design accessible",
+      fr: "qui valorise l'amélioration de la vie des gens grâce a un design accessible",
     },
   };
   return (

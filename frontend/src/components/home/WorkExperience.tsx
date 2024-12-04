@@ -29,7 +29,7 @@ export function WorkExperience() {
       company: "Minelead",
       description: {
         en: "Minelead provides real-time email finding and verification, with tools for bulk searches, browser extensions, and custom email lists to help you gather high-quality leads efficiently.",
-        fr: "Minelead fournit la recherche et la vérification d'emails en temps réel, avec des outils pour les recherches en masse, des extensions de navigateur et des listes d'emails personnalisées pour vous aider à recueillir des prospects de haute qualité de manière efficace.",
+        fr: "Minelead fournit la recherche et la vérification d'emails en temps réel, avec des outils pour les recherches en masse, des extensions de navigateur et des listes d'emails personnalisées pour vous aider a recueillir des prospects de haute qualité de manière efficace.",
       },
       img: Minelead,
       link: "",

@@ -8,7 +8,7 @@ export function Footer() {
   const TRANSLATIONS = {
     DEDICATED: {
       en: "A dedicated developer ready to take on any challenge.",
-      fr: "Un développeur dévoué prêt à relever tous les défis.",
+      fr: "Un développeur dévoué prêt a relever tous les défis.",
     },
     COPYRIGHT: {
       en: "Copyright",

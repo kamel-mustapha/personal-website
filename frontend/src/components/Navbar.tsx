@@ -75,7 +75,7 @@ export function Navbar() {
     {
       name: {
         en: "About",
-        fr: "À propos",
+        fr: "A propos",
       },
       link: "/about",
     },
