@@ -24,7 +24,7 @@ export function Portfolio() {
   return (
     <>
       <h1 className="mt-16 text-4xl">Portfoio</h1>
-      <p className="mt-4 max-w-[900px] bg-transparent leading-relaxed">{TRANSLATIONS.TITLE[language!.state]}</p>
+      <p className="mt-4 max-w-[1400px] bg-transparent leading-relaxed">{TRANSLATIONS.TITLE[language!.state]}</p>
       <Projects />
       <p className="text-center mt-60">
         <div>{TRANSLATIONS.ADDITION[language!.state]}</div>
