@@ -5,6 +5,8 @@ import Fr from "../assets/fr.svg";
 import En from "../assets/en.svg";
 import Down from "../assets/arrow-down.svg";
 import { LangContext, Language } from "../contexts/LangContext";
+import { TRANSLATIONS } from "../translations";
+
 interface Lang {
   name: string;
   icon: string;
@@ -88,13 +90,6 @@ export function Navbar() {
     },
   ];
 
-  const TRANSLATIONS = {
-    CONTACT: {
-      en: "CONTACT",
-      fr: "CONTACT",
-    },
-  };
-
   return (
     <nav className="bg-secondary fixed w-full z-[500] bg-opacity-60 backdrop-blur-md border-b border-button border-x-2 border-x-text left-0 right-0 mx-auto ">
       <div className="max-w-primary mx-auto px-4 py-4 flex justify-between items-center">
@@ -103,7 +98,7 @@ export function Navbar() {
         </Link>
         <div className="hidden lg:flex gap-16 text-lg items-center text-gray-300">
           <a href="mailto:kamel.dine@hotmail.om" className="button-primary ">
-            {TRANSLATIONS.CONTACT[language!.state]}
+            {TRANSLATIONS.CONTACT_ME[language!.state]}
           </a>
           {links.map((link, index) => (
             <NavLink onClick={linkClick} key={index} to={link.link} className={({ isActive }) => `navbar-link ${isActive ? "link-active" : ""}`}>
@@ -177,7 +172,7 @@ export function Navbar() {
           ))}
 
           <a href="mailto:kamel.dine@hotmail.om" className="button-primary !w-full text-center">
-            {TRANSLATIONS.CONTACT[language!.state]}
+            {TRANSLATIONS.CONTACT_ME[language!.state]}
           </a>
         </div>
       )}

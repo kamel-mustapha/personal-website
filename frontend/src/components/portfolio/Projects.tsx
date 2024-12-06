@@ -8,6 +8,7 @@ import Lamacta from "../../assets/lamacta-home.png";
 import { Presentation } from "./Presentation";
 import { useContext, useState } from "react";
 import { LangContext } from "../../contexts/LangContext";
+import { TRANSLATIONS } from "../../translations";
 
 interface ProjectType {
   name: string;
@@ -102,12 +103,6 @@ export function Projects() {
       },
     },
   ];
-  const TRANSLATIONS = {
-    PREVIEW: {
-      en: "PREVIEW",
-      fr: "APERÇU",
-    },
-  };
 
   // const showDialog = () => {
   //   setDialog(true);

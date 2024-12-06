@@ -5,25 +5,10 @@ import Wissal from "../../assets/wissal-academy.png";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { LangContext } from "../../contexts/LangContext";
+import { TRANSLATIONS } from "../../translations";
 
 export function WorkExperience() {
   const language = useContext(LangContext);
-
-  const TRANSLATIONS = {
-    MORE: {
-      en: "MORE PROJECTS",
-      fr: "PLUS DE PROJETS",
-    },
-    LEARN: {
-      en: "LEARN MORE",
-      fr: "EN SAVOIR PLUS",
-    },
-    PREVIEW: {
-      en: "PREVIEW",
-      fr: "APERÇU",
-    },
-  };
-
   const portfolios = [
     {
       company: "Minelead",
@@ -95,7 +80,7 @@ export function WorkExperience() {
       </div>
       <div className="flex justify-center mt-4 mb-8">
         <Link className="button-primary z-[100]" to="/portfolio">
-          {TRANSLATIONS.MORE[language!.state]}
+          {TRANSLATIONS.MORE_PROJECTS[language!.state]}
         </Link>
       </div>
     </div>
