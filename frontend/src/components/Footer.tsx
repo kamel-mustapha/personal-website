@@ -12,9 +12,14 @@ export function Footer() {
           <img src={Logo} width={80} alt="" />
           Kamel Dine
         </h3>
-        <p className="max-w-[500px] text-gray-400">{TRANSLATIONS.FOOTER_DEDICATED[language!.state]}</p>
+        <p className="max-w-[500px] text-gray-400">
+          {TRANSLATIONS.FOOTER_DEDICATED[language!.state]}
+        </p>
         <div className="flex gap-6 my-4">
-          <a href="https://www.linkedin.com/in/mustapha-kamel-dine/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/mustapha-kamel-dine/"
+            target="_blank"
+          >
             <i className="fa-brands fa-linkedin-in fa-lg"></i>
           </a>
           <a href="https://github.com/kamel-mustapha" target="_blank">
@@ -22,7 +27,9 @@ export function Footer() {
           </a>
         </div>
       </div>
-      <div className="bg-secondary text-text opacity-90 text-center py-4 border-x-2 border-x-text">{TRANSLATIONS.COPYRIGHT[language!.state]} ©2024 Kamel Dine.</div>
+      <div className="bg-secondary text-text opacity-90 text-center py-4 border-x-2 border-x-text">
+        {TRANSLATIONS.COPYRIGHT[language!.state]} ©2025 Kamel Dine.
+      </div>
     </>
   );
 }
