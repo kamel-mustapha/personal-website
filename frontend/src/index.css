@@ -68,7 +68,7 @@ html {
 }
 
 .project-case .description {
-  @apply lg:w-3/4 relative mt-16 lg:mt-20 z-50;
+  @apply lg:w-3/4 relative z-50;
 }
 
 .project-case .description h4 {

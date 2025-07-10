@@ -1,7 +1,6 @@
 import Gradient from "../../assets/gradient.svg";
 import Minelead from "../../assets/minelead-home.png";
 import Wissal from "../../assets/wissal-academy-home.png";
-import Carto from "../../assets/carto-home.png";
 import Statuschecks from "../../assets/statuschecks-home.png";
 import Easygestion from "../../assets/gestion-home.jpg";
 import Lamacta from "../../assets/lamacta-home.png";
@@ -11,6 +10,11 @@ import { Presentation } from "./Presentation";
 import { useContext, useState } from "react";
 import { LangContext } from "../../contexts/LangContext";
 import { TRANSLATIONS } from "../../translations";
+import Node from "../../assets/nodejs-icon.svg";
+import Nest from "../../assets/nest-icon.png";
+import Angular from "../../assets/angular-icon.svg";
+import Kubernetes from "../../assets/kubernetes-icon.svg";
+import Ovh from "../../assets/ovh-icon.svg";
 
 interface ProjectType {
   name: string;
@@ -24,6 +28,7 @@ interface ProjectType {
     en: string;
     fr: string;
   };
+  technologies?: string[];
 }
 
 export function Projects() {
@@ -42,6 +47,7 @@ export function Projects() {
         en: "One of the leading French car brokers. Autodiscount offers discounted new cars from major brands, leasing solutions, trade-ins, and online purchase services. I contributed to improving the performance, UX, and core business features of the platform.",
         fr: `L'un des principaux mandataires auto en France. Autodiscount propose des voitures neuves à prix remises, du leasing, la reprise de vehicules et des services d'achat en ligne. J'ai contribue à l'amelioration des performances, de l'experience utilisateur et des fonctionnalites metiers du site.`,
       },
+      technologies: [Node, Nest, Angular, Kubernetes, Ovh],
     },
     {
       name: "Club Auto",
@@ -54,6 +60,20 @@ export function Projects() {
       description: {
         en: "French car brokerage platform specializing in discounted new vehicles and leasing solutions. Club Auto provides online tools for configuration, trade-ins, and financing. I worked on optimizing user flows, enhancing performance, and integrating business features.",
         fr: `Plateforme française de courtage automobile spécialisée dans les voitures neuves à prix remisés et les solutions de leasing. Club Auto propose des outils en ligne pour la configuration, la reprise et le financement. J'ai travaillé sur l'optimisation des parcours utilisateurs, l'amélioration des performances et l'intégration des fonctionnalités métier.`,
+      },
+      technologies: [Node, Nest, Angular, Kubernetes, Ovh],
+    },
+    {
+      name: "Wissal Academy",
+      preview: "https://wissalacademy.com",
+      image: Wissal,
+      position: {
+        en: "Full Stack Developer / Tech Lead",
+        fr: "Developpeur Full Stack / Lead Tech",
+      },
+      description: {
+        en: "Wissal Academy is a web platform designed for managing training schools. It offers a showcase website along with a back-office system, enabling users to efficiently manage training programs, students, instructors, and certifications. The platform provides an integrated solution for streamlining operations and enhancing the visibility of educational institutions.",
+        fr: `Wissal Academy est une plateforme web conçue pour la gestion des ecoles de formation. Elle propose un site vitrine ainsi qu’un système de back-office, permettant aux utilisateurs de gerer efficacement les programmes de formation, les etudiants, les instructeurs et les certifications. La plateforme offre une solution integree pour optimiser les operations et ameliorer la visibilite des etablissements educatifs.`,
       },
     },
     {
@@ -83,29 +103,15 @@ export function Projects() {
       },
     },
     {
-      name: "Wissal Academy",
-      preview: "https://wissalacademy.com",
-      image: Wissal,
+      name: "Easygestion",
+      image: Easygestion,
       position: {
-        en: "Full Stack Developer / Tech Lead",
-        fr: "Developpeur Full Stack / Lead Tech",
+        en: "Founder / Full Stack Developer",
+        fr: "Fondateur / Developpeur full stack",
       },
       description: {
-        en: "Wissal Academy is a web platform designed for managing training schools. It offers a showcase website along with a back-office system, enabling users to efficiently manage training programs, students, instructors, and certifications. The platform provides an integrated solution for streamlining operations and enhancing the visibility of educational institutions.",
-        fr: `Wissal Academy est une plateforme web conçue pour la gestion des ecoles de formation. Elle propose un site vitrine ainsi qu’un système de back-office, permettant aux utilisateurs de gerer efficacement les programmes de formation, les etudiants, les instructeurs et les certifications. La plateforme offre une solution integree pour optimiser les operations et ameliorer la visibilite des etablissements educatifs.`,
-      },
-    },
-    {
-      name: "Carto",
-      preview: "http://ec2-34-193-129-50.compute-1.amazonaws.com/",
-      image: Carto,
-      position: {
-        en: "Tech Lead",
-        fr: "Lead Tech",
-      },
-      description: {
-        en: "Carto is an innovative web application designed to simplify the design, visualization, and management of complex application architectures. Whether you’re organizing open or restricted data flows, Carto provides a powerful, intuitive interface that enhances clarity and productivity.",
-        fr: `Carto est une application web innovante conçue pour simplifier la conception, la visualisation et la gestion des architectures d'applications complexes. Que vous organisiez des flux de donnees ouverts ou restreints, Carto offre une interface puissante et intuitive qui ameliore la clarte et la productivite.`,
+        en: "EasyGestion is a desktop software tailored for merchants, including school cafeterias, to streamline their business operations. It offers essential tools for managing inventory, generating invoices and delivery notes, and handling sales, providing a simple and efficient solution for daily commerce management.",
+        fr: `EasyGestion est un logiciel de bureau conçu pour les commerçants, y compris les cantines scolaires, afin de simplifier la gestion de leurs operations commerciales. Il propose des outils essentiels pour gerer les stocks, generer des factures et des bons de livraison, ainsi que gerer les ventes, offrant une solution simple et efficace pour la gestion quotidienne du commerce.`,
       },
     },
     {
@@ -118,18 +124,6 @@ export function Projects() {
       description: {
         en: "StatusChecks is your all-in-one solution for monitoring websites, servers, APIs, and databases. Designed to keep your services running smoothly, it offers real-time monitoring, instant alerts, and detailed reports, so you can address potential issues before they impact your business.",
         fr: `StatusChecks est votre solution tout-en-un pour surveiller les sites web, serveurs, APIs et bases de donnees. Conçu pour garantir le bon fonctionnement de vos services, il offre une surveillance en temps reel, des alertes instantanees et des rapports detailles, vous permettant de resoudre les problèmes potentiels avant qu'ils n'affectent votre activite.`,
-      },
-    },
-    {
-      name: "Easygestion",
-      image: Easygestion,
-      position: {
-        en: "Founder / Full Stack Developer",
-        fr: "Fondateur / Developpeur full stack",
-      },
-      description: {
-        en: "EasyGestion is a desktop software tailored for merchants, including school cafeterias, to streamline their business operations. It offers essential tools for managing inventory, generating invoices and delivery notes, and handling sales, providing a simple and efficient solution for daily commerce management.",
-        fr: `EasyGestion est un logiciel de bureau conçu pour les commerçants, y compris les cantines scolaires, afin de simplifier la gestion de leurs operations commerciales. Il propose des outils essentiels pour gerer les stocks, generer des factures et des bons de livraison, ainsi que gerer les ventes, offrant une solution simple et efficace pour la gestion quotidienne du commerce.`,
       },
     },
   ];
@@ -171,6 +165,21 @@ export function Projects() {
               >
                 {project.description[language!.state]}
               </p>
+              {
+                project.technologies && (
+                  // --
+                  <div
+                    className={`mb-12 !gap-3 items-center !flex flex-wrap ${
+                      index % 2 > 0 ? "lg:!justify-end" : ""
+                    }`}
+                  >
+                    {project.technologies.map((technology) => (
+                      <img src={technology} alt="" className="w-16 h-16" />
+                    ))}
+                  </div>
+                )
+                // --
+              }
               <div className={`${index % 2 > 0 ? "lg:justify-end" : ""}`}>
                 {/* <button className="button-primary" onClick={showDialog}>
                   LEARN MORE
