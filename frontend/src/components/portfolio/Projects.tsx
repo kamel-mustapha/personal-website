@@ -123,7 +123,7 @@ export function Projects() {
         en: "EasyGestion is a desktop software tailored for merchants, including school cafeterias, to streamline their business operations. It offers essential tools for managing inventory, generating invoices and delivery notes, and handling sales, providing a simple and efficient solution for daily commerce management.",
         fr: `EasyGestion est un logiciel de bureau conçu pour les commerçants, y compris les cantines scolaires, afin de simplifier la gestion de leurs operations commerciales. Il propose des outils essentiels pour gerer les stocks, generer des factures et des bons de livraison, ainsi que gerer les ventes, offrant une solution simple et efficace pour la gestion quotidienne du commerce.`,
       },
-      technologies: [Python, Django, Aws],
+      technologies: [Python, Django, Angular, Aws],
     },
     {
       name: "Statuscheks",
