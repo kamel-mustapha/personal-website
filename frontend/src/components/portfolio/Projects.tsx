@@ -15,6 +15,13 @@ import Nest from "../../assets/nest-icon.png";
 import Angular from "../../assets/angular-icon.svg";
 import Kubernetes from "../../assets/kubernetes-icon.svg";
 import Ovh from "../../assets/ovh-icon.svg";
+import Nx from "../../assets/nx-logo.svg";
+import Spring from "../../assets/spring-logo.png";
+import Docker from "../../assets/docker-logo.svg";
+import Aws from "../../assets/aws-logo.png";
+import Python from "../../assets/python-logo.svg";
+import Django from "../../assets/django-logo.svg";
+import Selenium from "../../assets/selenium-logo.png";
 
 interface ProjectType {
   name: string;
@@ -75,6 +82,7 @@ export function Projects() {
         en: "Wissal Academy is a web platform designed for managing training schools. It offers a showcase website along with a back-office system, enabling users to efficiently manage training programs, students, instructors, and certifications. The platform provides an integrated solution for streamlining operations and enhancing the visibility of educational institutions.",
         fr: `Wissal Academy est une plateforme web conçue pour la gestion des ecoles de formation. Elle propose un site vitrine ainsi qu’un système de back-office, permettant aux utilisateurs de gerer efficacement les programmes de formation, les etudiants, les instructeurs et les certifications. La plateforme offre une solution integree pour optimiser les operations et ameliorer la visibilite des etablissements educatifs.`,
       },
+      technologies: [Angular, Nx, Spring, Docker, Aws],
     },
     {
       name: "Lamacta",
@@ -88,6 +96,7 @@ export function Projects() {
         en: "Lamacta is your go-to platform for buying, selling, and renting real estate in Algeria. Whether you're searching for apartments, villas, or commercial properties, Lamacta simplifies the process with thousands of listings, a user-friendly interface, and a property price estimation tool to help you make informed decisions.",
         fr: `Lamacta est votre plateforme de reference pour l'achat, la vente et la location de biens immobiliers en Algerie. Que vous recherchiez des appartements, des villas ou des proprietes commerciales, Lamacta simplifie le processus avec des milliers d'annonces, une interface conviviale et un outil d'estimation des prix des biens immobiliers pour vous aider a prendre des decisions eclairees.`,
       },
+      technologies: [Python, Django, Aws, Docker, Selenium],
     },
     {
       name: "Minelead",
@@ -101,6 +110,7 @@ export function Projects() {
         en: "Find Emails and Generate Leads. Cutting Edge Email Finder and Verifier, with Email scrapper for LinkedIn and more features for the best lead generation tool. find email for any company or website as you visit them.",
         fr: `Trouvez des e-mails et generez des leads. Un outil de pointe pour trouver et verifier des e-mails, avec un extracteur d'e-mails pour LinkedIn et bien plus de fonctionnalites pour le meilleur outil de generation de leads. Trouvez des adresses e-mail pour toute entreprise ou site web au fur et a mesure que vous les visitez.`,
       },
+      technologies: [Python, Django, Aws, Docker, Selenium],
     },
     {
       name: "Easygestion",
@@ -113,6 +123,7 @@ export function Projects() {
         en: "EasyGestion is a desktop software tailored for merchants, including school cafeterias, to streamline their business operations. It offers essential tools for managing inventory, generating invoices and delivery notes, and handling sales, providing a simple and efficient solution for daily commerce management.",
         fr: `EasyGestion est un logiciel de bureau conçu pour les commerçants, y compris les cantines scolaires, afin de simplifier la gestion de leurs operations commerciales. Il propose des outils essentiels pour gerer les stocks, generer des factures et des bons de livraison, ainsi que gerer les ventes, offrant une solution simple et efficace pour la gestion quotidienne du commerce.`,
       },
+      technologies: [Python, Django, Aws],
     },
     {
       name: "Statuscheks",
@@ -125,6 +136,7 @@ export function Projects() {
         en: "StatusChecks is your all-in-one solution for monitoring websites, servers, APIs, and databases. Designed to keep your services running smoothly, it offers real-time monitoring, instant alerts, and detailed reports, so you can address potential issues before they impact your business.",
         fr: `StatusChecks est votre solution tout-en-un pour surveiller les sites web, serveurs, APIs et bases de donnees. Conçu pour garantir le bon fonctionnement de vos services, il offre une surveillance en temps reel, des alertes instantanees et des rapports detailles, vous permettant de resoudre les problèmes potentiels avant qu'ils n'affectent votre activite.`,
       },
+      technologies: [Python, Django, Aws, Docker],
     },
   ];
 
