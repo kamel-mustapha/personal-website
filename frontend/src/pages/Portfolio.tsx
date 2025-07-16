@@ -7,7 +7,7 @@ export function Portfolio() {
   const language = useContext(LangContext);
   return (
     <>
-      <h1 className="mt-16 text-4xl">Portfoio</h1>
+      <h1 className="mt-16 text-4xl">Portfolio</h1>
       <p className="mt-4 max-w-[1400px] bg-transparent leading-relaxed">{TRANSLATIONS.PORTFOLIO_TITLE[language!.state]}</p>
       <Projects />
       <p className="text-center mt-60">
